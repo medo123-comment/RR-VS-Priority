@@ -3,7 +3,7 @@ package metrics;
 import java.util.List;
 import model.Process;
 
-public class MetricsCalculator {
+public class MetricCalculator {
     public static double avgWaiting;
     public static double avgTurnaround;
     public static double avgResponse;
