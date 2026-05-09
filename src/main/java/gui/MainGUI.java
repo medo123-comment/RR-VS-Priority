@@ -5,7 +5,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
-import metrics.MetricCalculator;
+import metrics.MetricsCalculator;
 import model.Process;
 import scheduler.*;
  
