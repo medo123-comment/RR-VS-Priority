@@ -32,7 +32,7 @@ public class MainGUI extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
  
-        // --- 1. Top Input Panel ---
+        
         JPanel top = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
         top.add(new JLabel("ID:")); idF = new JTextField(3); top.add(idF);
         top.add(new JLabel("Arrival (AT):")); arrF = new JTextField(3); top.add(arrF);
@@ -62,7 +62,7 @@ public class MainGUI extends JFrame {
         clearBtn.addActionListener(e -> clearEverything());
         top.add(clearBtn);
  
-        // --- 2. Scenario Buttons Panel ---
+       
         JPanel scenarioPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 8, 6));
         scenarioPanel.setBorder(BorderFactory.createTitledBorder("Test Scenarios"));
  
@@ -92,13 +92,13 @@ public class MainGUI extends JFrame {
         btnE2.addActionListener(e -> triggerScenarioE2());
         scenarioPanel.add(btnE2);
  
-        // North panel combines input + scenarios
+        
         JPanel northPanel = new JPanel();
         northPanel.setLayout(new BoxLayout(northPanel, BoxLayout.Y_AXIS));
         northPanel.add(top);
         northPanel.add(scenarioPanel);
  
-        // --- 3. Central Content Area ---
+        
         JPanel mainContainer = new JPanel();
         mainContainer.setLayout(new BoxLayout(mainContainer, BoxLayout.Y_AXIS));
  
@@ -117,7 +117,7 @@ public class MainGUI extends JFrame {
         ganttPanel.setPreferredSize(new Dimension(1250, 150));
         mainContainer.add(ganttPanel);
  
-        // --- 4. Comparison Panel ---
+        
         comparisonPanel = new JPanel();
         comparisonPanel.setLayout(new BoxLayout(comparisonPanel, BoxLayout.Y_AXIS));
         comparisonPanel.setVisible(false);
