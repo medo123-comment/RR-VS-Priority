@@ -52,11 +52,11 @@
 
 # \- How to Run
 
-# 1\. Open the folder in \*\*IntelliJ\*\* or \*\*NetBeans\*\*.
+# 1\. Open the folder in IntelliJ or NetBeans.
 
 # 2\. Make sure it's loaded as a \*\*Maven project\*\* (to get all dependencies).
 
-# 3\. Go to `src/main/java/com/mycompany/os/` and run \*\*Main.java\*\*.
+# 3\. Go to `src/main/java/com/mycompany/os/` and run \*\*MainGUI.java\*\*.
 
 
 
