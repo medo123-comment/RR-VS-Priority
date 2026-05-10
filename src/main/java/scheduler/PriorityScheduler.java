@@ -14,7 +14,7 @@ public class PriorityScheduler {
         int time = 0;
         Process lastRunning = null;
 
-        // إعادة ضبط القيم قبل البدء
+        
         for(Process p : processes) {
             p.remainingTime = p.burstTime;
             p.startTime = -1; 
@@ -31,7 +31,7 @@ public class PriorityScheduler {
             }
 
             if (best != null) {
-                // تسجيل وقت الاستجابة (أول مرة يلمس فيها المعالج)
+                
                 if (best.startTime == -1) {
                     best.startTime = time;
                 }

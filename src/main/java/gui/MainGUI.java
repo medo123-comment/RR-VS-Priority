@@ -188,9 +188,9 @@ public class MainGUI extends JFrame {
         setLocationRelativeTo(null);
     }
  
-    // ===================== SCENARIO LOADERS =====================
+   
  
-    /** Scenario A: Basic mixed workload - normal processes */
+    
     private void loadScenarioA() {
         clearEverything();
         qF.setText("4");
@@ -206,7 +206,7 @@ public class MainGUI extends JFrame {
             "Scenario A", JOptionPane.INFORMATION_MESSAGE);
     }
  
-    /** Scenario B: Urgency case - one process has clearly higher priority */
+    
     private void loadScenarioB() {
         clearEverything();
         qF.setText("4");
@@ -221,7 +221,7 @@ public class MainGUI extends JFrame {
             "Scenario B", JOptionPane.INFORMATION_MESSAGE);
     }
  
-    /** Scenario C: Fairness case - similar burst times, check RR balance */
+    
     private void loadScenarioC() {
         clearEverything();
         qF.setText("4");
@@ -236,7 +236,7 @@ public class MainGUI extends JFrame {
             "Scenario C", JOptionPane.INFORMATION_MESSAGE);
     }
  
-    /** Scenario D: Starvation - low-priority processes may wait very long */
+    
     private void loadScenarioD() {
         clearEverything();
         qF.setText("4");
@@ -252,7 +252,7 @@ public class MainGUI extends JFrame {
             "Scenario D", JOptionPane.INFORMATION_MESSAGE);
     }
  
-    /** Scenario E1: Invalid input — negative priority */
+    
     private void triggerScenarioE1() {
         idF.setText("10");
         arrF.setText("2");
@@ -263,7 +263,7 @@ public class MainGUI extends JFrame {
             "Input Error", JOptionPane.ERROR_MESSAGE);
     }
  
-    /** Scenario E2: Invalid input — BT out of range */
+   
     private void triggerScenarioE2() {
         idF.setText("11");
         arrF.setText("1");
@@ -285,7 +285,7 @@ public class MainGUI extends JFrame {
         revalidate(); repaint();
     }
  
-    // ===================== EXISTING METHODS =====================
+   
  
     private void addProcessAction() {
         StringBuilder errorLog = new StringBuilder();
